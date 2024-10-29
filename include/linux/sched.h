@@ -1361,12 +1361,19 @@ struct task_struct {
 #ifdef CONFIG_LIVEPATCH
 	int patch_state;
 #endif
+
 #ifdef CONFIG_SECURITY
 	/* Used by LSM modules for access restriction: */
 	void				*security;
 #endif
+
 #ifdef CONFIG_ANDROID_SIMPLE_LMK
 	struct task_struct		*simple_lmk_next;
+#endif
+
+#ifdef CONFIG_KSU_SUSFS_SUS_MOUNT
+	u64 android_kabi_reserved1;
+	u64 android_kabi_reserved2;
 #endif
 
 	struct {
