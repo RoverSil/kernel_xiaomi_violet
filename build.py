@@ -67,7 +67,7 @@ CLANG_DIR=$TC_DIR/clang-r522817
 export CONFIG_FILE="vendor/violet-perf_defconfig"
 export ARCH="arm64"
 export KBUILD_BUILD_HOST=HyperOS
-export KBUILD_BUILD_USER=KIDS~
+export KBUILD_BUILD_USER=KIDS
 export PATH="$CLANG_DIR/bin:$PATH"
 
 # Sync submodule
