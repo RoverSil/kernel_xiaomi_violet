@@ -57,7 +57,7 @@ objdir="${kernel_dir}/out"
 anykernel=$HOME/anykernel
 builddir="${kernel_dir}/build"
 ZIMAGE=$kernel_dir/out/arch/arm64/boot/Image.gz-dtb
-kernel_name="xcalibur-v3.1-violet-dynamic-kernelsu"
+kernel_name="Violet-V1.0-Dynamic-KernelSu"
 variant="Retrofit Dynamic"
 support="Android 13(T)-14(U)"
 commit_head=$(git log --oneline -1)
@@ -66,8 +66,8 @@ TC_DIR=$HOME/tc/
 CLANG_DIR=$TC_DIR/clang-r522817
 export CONFIG_FILE="vendor/violet-perf_defconfig"
 export ARCH="arm64"
-export KBUILD_BUILD_HOST=SuperiorOS
-export KBUILD_BUILD_USER=Joker-V2
+export KBUILD_BUILD_HOST=HyperOS
+export KBUILD_BUILD_USER=KIDS~
 export PATH="$CLANG_DIR/bin:$PATH"
 
 # Sync submodule
